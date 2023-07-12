@@ -42,24 +42,24 @@ var assisstArray=[
 function lotsofQuates(){
     var random = Number.parseInt(Math.random()*Quates.length);
     var random = Number.parseInt(Math.random()*assisstArray.length );
-    document.querySelector('#Q_ID').textContent = `--${Quates[random].Q_ID}`;
-    document.querySelector('#A_ID').textContent = `--${Quates[random].A_ID}`;
+    document.querySelector('#Q_ID').innerHTML = `--${Quates[random].Q_ID}`;
+    document.querySelector('#A_ID').innerHTML = `--${Quates[random].A_ID}`;
     Quates.splice(random,1)
     assisstArray.push(Quates[random])
    
    console.log(Quates,'Q')
 if(assisstArray.includes(Quates[random])&& assisstArray.length==Quates.length){
    
-    document.querySelector('#Q_ID').textContent = `--${Quates[random].Q_ID}`;
-    document.querySelector('#A_ID').textContent = `--${Quates[random].A_ID}`;
+    document.querySelector('#Q_ID').innerHTML = `--${Quates[random].Q_ID}`;
+    document.querySelector('#A_ID').innerHTML = `--${Quates[random].A_ID}`;
     Quates.splice(random,1)
     assisstArray.push(Quates[random])
    
    console.log(Quates,'Q')
     
 }else{
-    document.querySelector('#Q_ID').textContent = `--${assisstArray[random].Q_ID}`;
-    document.querySelector('#A_ID').textContent = `--${assisstArray[random].A_ID}`;
+    document.querySelector('#Q_ID').innerHTML = `--${assisstArray[random].Q_ID}`;
+    document.querySelector('#A_ID').innerHTML = `--${assisstArray[random].A_ID}`;
     assisstArray.splice(random,1)
     Quates.push(assisstArray[random]);
     console.log(assisstArray,'a')
